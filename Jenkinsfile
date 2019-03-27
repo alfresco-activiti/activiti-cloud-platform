@@ -36,7 +36,7 @@ pipeline {
           sh "git checkout master"
           sh "git config --global credential.helper store"
           sh "jx step git credentials"
-          sh "jx step next-version --use-git-tag-only --tag"
+          sh "jx step next-version --use-git-tag-only --tag=false"
           dir('charts/activiti-cloud-platform') {
 
             // Let's build chart
