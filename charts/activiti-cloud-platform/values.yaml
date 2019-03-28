@@ -74,7 +74,7 @@ application:
   runtime-bundle:
     service: 
       name: rb-my-app  
-    enabled: false
+    enabled: true
     # extraEnv: |
     #   - name: ACTIVITI_SECURITY_POLICIES_0_NAME
     #     value: "HR Group restricted to SimpleProcess and ConnectorProcess"
@@ -126,7 +126,7 @@ application:
     #     value: "*"
 
   activiti-cloud-connector:
-    enabled: false
+    enabled: true
     service: 
       name: example-cloud-connector  
 
