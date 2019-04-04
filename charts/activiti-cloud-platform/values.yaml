@@ -73,7 +73,7 @@ activiti-cloud-modeling:
 application:
   runtime-bundle:
     service: 
-      name: rb-my-app  
+      name: my-app-rb  
     enabled: true
     # extraEnv: |
     #   - name: ACTIVITI_SECURITY_POLICIES_0_NAME
@@ -100,7 +100,7 @@ application:
   activiti-cloud-query:
     enabled: true
     service: 
-      name: query  
+      name: my-app-query  
     image:
       pullPolicy: Always
     # extraEnv: |
@@ -138,7 +138,7 @@ application:
   activiti-cloud-audit:
     enabled: true
     service: 
-      name: audit  
+      name: my-app-audit  
     # extraEnv: |
     #   - name: ACTIVITI_SECURITY_POLICIES_0_NAME
     #     value: "HR Group restricted to SimpleProcess and ConnectorProcess"
